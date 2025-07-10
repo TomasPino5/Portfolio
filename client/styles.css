@@ -8,7 +8,7 @@ body {
   background:
     radial-gradient(circle at top center, rgba(37, 48, 66, 0.5) 0%, transparent 90%),
     linear-gradient(to bottom, #0f172a, #0b1120, #010614, #000000);
-  color: #ffffff;
+  color: #6a6cdd;
   min-height: 100vh;
   font-family: 'Segoe UI', 'Inter', sans-serif;
   text-decoration: none;
@@ -20,22 +20,24 @@ body {
   padding: 1rem;
 }
 
-/* Contenedor de links */
 .nav-links {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  background: #1b2233;
+  /* background: #1b2233; esto se debe activar al bajar*/
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
   list-style: none;
   margin: 0;
 }
 
-/* Enlaces */
-.nav-links a {
+.item {
   text-decoration: none;
   color: #f2f2f2;
   font-weight: 500;
   transition: color 0.3s;
+}
+
+.item:hover {
+  color: #565678; 
 }
