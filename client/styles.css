@@ -1,43 +1,321 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 body {
-  background:
-    radial-gradient(circle at top center, rgba(37, 48, 66, 0.5) 0%, transparent 90%),
-    linear-gradient(to bottom, #0f172a, #0b1120, #010614, #000000);
-  color: #6a6cdd;
   min-height: 100vh;
   font-family: 'Segoe UI', 'Inter', sans-serif;
   text-decoration: none;
 }
 
+.dark-mode {
+  background:
+    radial-gradient(circle at top center, rgba(37, 48, 66, 0.5) 0%, transparent 90%),
+    linear-gradient(to bottom, #0f172a, #0b1120, #010614, #000000);
+    color: #ffffff;
+}
+
+.light-mode {
+  background:
+    radial-gradient(circle at top center, rgba(153, 171, 201, 0.5) 0%, transparent 90%),
+    linear-gradient(to bottom, #d8d8d8, #e1e1e1, #ededed, #ffffff);
+    color: #000000;
+}
+
 .navbar {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
   display: flex;
   justify-content: center;
-  padding: 1rem;
 }
 
 .nav-links {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  /* background: #1b2233; esto se debe activar al bajar*/
   padding: 0.6rem 1.2rem;
   border-radius: 999px;
   list-style: none;
   margin: 0;
 }
 
+.scrolledDark {
+  background: #1b2233;
+}
+
+.scrolledLight {
+  background: #d3d3d3;
+}
+
 .item {
   text-decoration: none;
-  color: #f2f2f2;
   font-weight: 500;
   transition: color 0.3s;
+  cursor: pointer;
 }
 
 .item:hover {
   color: #565678; 
+}
+
+.perfil {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 40px 20px;
+}
+
+.estado-laboral {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: brightness(75%);
+}
+
+.disponible {
+  position: relative;
+  overflow: hidden;
+  background-color: #1f2937;
+  color: #a7f3d0;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  border: 1px solid #10b981;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.disponible::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
+  transform: skewX(-20deg);
+}
+
+.disponible:hover::before {
+  animation: shine 1s ease forwards;
+}
+
+@keyframes shine {
+  from {
+    left: -75%;
+  }
+  to {
+    left: 125%;
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}   
+
+.descripcion {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.resaltado {
+  color: #d4ad13;
+  font-weight: bold;
+}
+
+.botones {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: 9999px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.contacto {
+  background-color: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.linkedin {
+  background-color: #1e293b;
+  color: white;
+  border: 1px solid #334155;
+}
+
+.btn:hover {
+  background-color: #334155;
+}
+
+.experiencia-laboral {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.experiencia-laboral h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.linea-tiempo {
+  position: relative;
+  padding-left: 30px;
+  border-left: 1px solid;
+}
+
+.item0 {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.punto {
+  width: 12px;
+  height: 12px;
+  background-color: #d4ad13;
+  border-radius: 50%;
+  position: absolute;
+  left: -36px;
+  top: 4px;
+}
+
+.contenido .titulo {
+  color: #d4ad13;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.empresa {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.fecha {
+  font-style: italic;
+  font-size: 13px;
+}
+
+.experience-description {
+  margin-top: 8px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.proyectos {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.proyecto {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+}
+
+.preview {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+  flex: 1;
+  min-width: 260px;
+  max-width: 420px;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.etiquetas {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #1e293b;
+  color: #fff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.content p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btns {
+  background: #1e293b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.btns:hover {
+  background: #334155;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
 }
