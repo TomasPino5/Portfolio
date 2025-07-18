@@ -32,6 +32,7 @@ body {
   border-radius: 999px;
   display: flex;
   justify-content: center;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -65,8 +66,7 @@ body {
 
 .perfil {
   font-family: 'Segoe UI', sans-serif;
-  padding: 40px;
-  max-width: 700px;
+  max-width: 805px;
   margin: 0 auto;
   margin-top: 100px;
   padding: 40px 20px;
@@ -236,9 +236,7 @@ h1 {
 }
 
 .proyectos {
-  max-width: 900px;
-  margin: auto;
-  padding: 2rem 1rem;
+  margin-left: 45px;
   font-family: 'Segoe UI', sans-serif;
 }
 
@@ -247,8 +245,8 @@ h1 {
   gap: 1rem;
   margin-bottom: 2.5rem;
   flex-wrap: wrap;
-  justify-content: center;
   text-align: left;
+  justify-content: center;
 }
 
 .preview {
@@ -266,6 +264,7 @@ h1 {
 }
 
 .content h3 {
+  margin-top: -4px;
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
   font-weight: bold;
@@ -279,9 +278,8 @@ h1 {
 }
 
 .tag {
-  background: #1e293b;
   color: #fff;
-  padding: 0.3rem 0.7rem;
+  padding: 0.2rem 0.7rem;
   border-radius: 999px;
   font-size: 0.8rem;
 }
@@ -291,6 +289,7 @@ h1 {
   margin-bottom: 1rem;
   color: #cbd5e1;
   font-size: 0.95rem;
+  margin-top: -5px;
 }
 
 .buttons {
@@ -301,12 +300,13 @@ h1 {
 .btns {
   background: #1e293b;
   color: white;
-  border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.6rem;
   border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s ease;
   font-size: 0.95rem;
+  text-decoration: none;
+  border: 1px solid white;
 }
 
 .btns:hover {
@@ -318,4 +318,91 @@ h1 {
   font-weight: bold;
   margin-bottom: 40px;
   text-align: center;
+}
+
+.title-projects {
+  margin-right: 40px;
+}
+
+.marco-imagen {
+  background: radial-gradient(
+      circle at top left,
+      rgba(90, 73, 174, 0.3) 0%,
+      rgb(56, 56, 56) 60%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(73, 128, 206, 0.3) 0%,
+      rgb(60, 60, 60) 60%
+    );
+  width: 420px;
+  height: 250px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background-color: #1e1e2f;
+}
+
+.imagen-ajustada {
+  width: 525px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(28%, 15%);
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+.proyecto:hover .imagen-ajustada {
+  transform: translate(0, 0px);
+}
+
+.fa-html5 {
+  color: #e54c21;
+}
+
+.fa-css3-alt {
+  color: #1a62b0;
+}
+
+.fa-js {
+  color: #f7df1e;
+}
+
+.fa-node-js {
+  color: #90c53f;
+}
+
+.fa-bootstrap {
+  color: #7509f6;
+}
+
+.html {
+  background-color: #48180b;
+}
+
+.css {
+  background-color: #0c2b4d;
+}
+
+.js {
+  background-color: #473f08;
+}
+
+.node {
+  background-color: #3d541b;
+}
+
+.bootstrap {
+  background-color: #220347;
+}
+
+.fa-envelope {
+  margin-bottom: -2px;
+}
+
+.fa-linkedin {
+  margin-bottom: -1px;
+  color: #007fbc;
 }
