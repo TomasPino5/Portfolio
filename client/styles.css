@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -13,14 +14,22 @@ body {
   background:
     radial-gradient(circle at top center, rgba(37, 48, 66, 0.5) 0%, transparent 90%),
     linear-gradient(to bottom, #0f172a, #0b1120, #010614, #000000);
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .light-mode {
   background:
     radial-gradient(circle at top center, rgba(153, 171, 201, 0.5) 0%, transparent 90%),
     linear-gradient(to bottom, #d8d8d8, #e1e1e1, #ededed, #ffffff);
-    color: #000000;
+  color: #000000;
+}
+
+body.light-mode .item {
+  color: #000000;
+}
+
+body.dark-mode .item {
+  color: #ffffff;
 }
 
 .navbar {
@@ -61,7 +70,7 @@ body {
 }
 
 .item:hover {
-  color: #565678; 
+  color: #565678;
 }
 
 .perfil {
@@ -70,6 +79,7 @@ body {
   margin: 0 auto;
   margin-top: 100px;
   padding: 40px 20px;
+  scroll-margin-top: 50px;
 }
 
 .estado-laboral {
@@ -107,12 +117,10 @@ body {
   left: -75%;
   width: 50%;
   height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0.2) 0%,
-    rgba(255, 255, 255, 0.6) 50%,
-    rgba(255, 255, 255, 0.2) 100%
-  );
+  background: linear-gradient(120deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.6) 50%,
+      rgba(255, 255, 255, 0.2) 100%);
   transform: skewX(-20deg);
 }
 
@@ -124,6 +132,7 @@ body {
   from {
     left: -75%;
   }
+
   to {
     left: 125%;
   }
@@ -132,7 +141,7 @@ body {
 h1 {
   font-size: 2.5rem;
   margin: 10px 0;
-}   
+}
 
 .descripcion {
   font-size: 1.2rem;
@@ -183,6 +192,7 @@ h1 {
   margin: 0 auto;
   padding: 40px 20px;
   font-family: sans-serif;
+  scroll-margin-top: 50px;
 }
 
 .experiencia-laboral h2 {
@@ -238,6 +248,7 @@ h1 {
 .proyectos {
   margin-left: 45px;
   font-family: 'Segoe UI', sans-serif;
+  scroll-margin-top: 85px;
 }
 
 .proyecto {
@@ -316,25 +327,25 @@ h1 {
 .title {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin: 0 0 40px 35px;
   text-align: center;
 }
 
 .title-projects {
   margin-right: 40px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
 .marco-imagen {
-  background: radial-gradient(
-      circle at top left,
+  background: radial-gradient(circle at top left,
       rgba(90, 73, 174, 0.3) 0%,
-      rgb(56, 56, 56) 60%
-    ),
-    radial-gradient(
-      circle at bottom right,
+      rgb(56, 56, 56) 60%),
+    radial-gradient(circle at bottom right,
       rgba(73, 128, 206, 0.3) 0%,
-      rgb(60, 60, 60) 60%
-    );
+      rgb(60, 60, 60) 60%);
   width: 420px;
   height: 250px;
   border-radius: 12px;
@@ -405,4 +416,156 @@ h1 {
 .fa-linkedin {
   margin-bottom: -1px;
   color: #007fbc;
+}
+
+.tecnologias {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  margin: 100px 0 0 90px;
+  font-family: 'Segoe UI', sans-serif;
+  scroll-margin-top: 52px;
+}
+
+.titulo-tecnologias {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 60px 0.5rem 0;
+}
+
+.description {
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.caja {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  user-select: none;
+}
+
+.caja:hover {
+  box-shadow: 0 0 20px 4px rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.caja h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #00ffff;
+}
+
+.caja ul {
+  list-style: none;
+  padding: 0;
+}
+
+.caja ul li {
+  margin: 0.5rem 0;
+}
+
+.herramientas {
+  grid-column: span 2;
+}
+
+.iconos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.iconos li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.iconos i {
+  margin-bottom: 0.5rem;
+}
+
+.iconos span {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.eximg {
+  height: 70px;
+  width: auto;
+  margin-bottom: 3px;
+}
+
+.vsc {
+  height: 55px;
+  width: auto;
+  margin: 7px 0 12px 0;
+}
+
+.fa-jira {
+  margin-top: 2px;
+  color: #0e65df;
+}
+
+.fa-npm {
+  color: #d50000;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 2rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #ccc;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  margin-left: 90px;
+}
+
+.footer-right {
+  margin-left: 440px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.box-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(180deg, #ffffff, #888c96);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
