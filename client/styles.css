@@ -177,10 +177,22 @@ h1 {
   border: 1px solid #334155;
 }
 
+body.light-mode .contacto {
+  background-color: #d8d8d8;
+  color: #000000;
+  border: 1px solid #b9b9b9;
+}
+
 .linkedin {
   background-color: #1e293b;
   color: white;
   border: 1px solid #334155;
+}
+
+body.light-mode .linkedin {
+  background-color: #d8d8d8;
+  color: #000000;
+  border: 1px solid #b9b9b9;
 }
 
 .btn:hover {
@@ -303,6 +315,10 @@ h1 {
   margin-top: -5px;
 }
 
+body.light-mode .content p {
+  color: #3c3f42;
+}
+
 .buttons {
   display: flex;
   gap: 0.8rem;
@@ -318,6 +334,12 @@ h1 {
   font-size: 0.95rem;
   text-decoration: none;
   border: 1px solid white;
+}
+
+body.light-mode .btns {
+  background-color: #d8d8d8;
+  color: #000000;
+  border: 1px solid #b9b9b9;
 }
 
 .btns:hover {
@@ -420,7 +442,6 @@ h1 {
 
 .tecnologias {
   text-align: center;
-  color: white;
   padding: 2rem;
   margin: 80px 0 0 60px;
   font-family: 'Segoe UI', sans-serif;
@@ -438,6 +459,10 @@ h1 {
   margin-bottom: 2rem;
 }
 
+body.light-mode .description {
+  color: #3c3f42;
+}
+
 .contenedor {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -453,6 +478,10 @@ h1 {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease, transform 0.3s ease;
   user-select: none;
+}
+
+body.light-mode .caja {
+  border: 1px solid #b9b9b9;
 }
 
 .caja:hover {
@@ -568,4 +597,8 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+body.light-mode .box-title {
+  background: linear-gradient(180deg, #ffffff, #888c96);
 }
