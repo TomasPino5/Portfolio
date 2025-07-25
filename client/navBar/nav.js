@@ -53,5 +53,4 @@ export function getNavbar() {
       document.getElementById("itemsContainer").classList.remove("scrolledDark");
     }
   });
-
 }

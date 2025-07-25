@@ -67,6 +67,16 @@ document.getElementById("bonus").addEventListener("click", () => {
     World.add(world, icon);
   }
 
+  let aux;
+
+  if (document.body.className == 'dark-mode') {
+    aux = './images/iconWhite.png';
+  } else {
+    aux = './images/iconBlack.png';
+  }
+
+
+
   const miIcono = Bodies.circle(
     window.innerWidth / 2,
     window.innerHeight / 2,
@@ -76,11 +86,11 @@ document.getElementById("bonus").addEventListener("click", () => {
       frictionAir: 0,
       friction: 0,
       collisionFilter: {
-        group: 1 
+        group: 1
       },
       render: {
         sprite: {
-          texture: './images/iconWhite.png',
+          texture: aux,
           xScale: 0.3,
           yScale: 0.3
         }

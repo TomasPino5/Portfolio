@@ -2,12 +2,20 @@ html,
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
   min-height: 100vh;
   font-family: 'Segoe UI', 'Inter', sans-serif;
   text-decoration: none;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .dark-mode {
@@ -199,6 +207,10 @@ body.light-mode .linkedin {
   background-color: #334155;
 }
 
+body.light-mode .btn:hover {
+  background-color: #cdcdcd;
+}
+
 .experiencia-laboral {
   max-width: 800px;
   margin: 0 auto;
@@ -258,7 +270,10 @@ body.light-mode .linkedin {
 }
 
 .proyectos {
-  margin-left: 45px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 940px;
+  width: 100%;
   font-family: 'Segoe UI', sans-serif;
   scroll-margin-top: 85px;
 }
@@ -270,6 +285,7 @@ body.light-mode .linkedin {
   flex-wrap: wrap;
   text-align: left;
   justify-content: center;
+  margin-left: 45px;
 }
 
 .preview {
@@ -342,6 +358,10 @@ body.light-mode .btns {
   border: 1px solid #b9b9b9;
 }
 
+body.light-mode .btns:hover {
+  background-color: #cdcdcd;
+}
+
 .btns:hover {
   background: #334155;
 }
@@ -349,12 +369,11 @@ body.light-mode .btns {
 .title {
   font-size: 28px;
   font-weight: bold;
-  margin: 0 0 40px 35px;
+  margin: 0 0 40px 0;
   text-align: center;
 }
 
 .title-projects {
-  margin-right: 40px;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -451,12 +470,15 @@ body.light-mode .btns {
 .titulo-tecnologias {
   font-size: 28px;
   font-weight: bold;
-  margin: 0 60px 0.5rem 0;
+  margin: 0 50px 2rem 0;
 }
 
 .description {
   color: #ccc;
+  max-width: 880px;
+  margin: 0 auto;
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 body.light-mode .description {
@@ -510,10 +532,14 @@ body.light-mode .caja {
 .iconos {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
   justify-content: center;
   padding: 0;
   list-style: none;
+}
+
+.extend {
+  gap: 4rem;
 }
 
 .iconos li {
@@ -560,7 +586,6 @@ body.light-mode .caja {
 }
 
 .footer a {
-  /* color: #ccc; */
   text-decoration: none;
   margin-left: 1.5rem;
   transition: color 0.3s ease;
@@ -605,8 +630,152 @@ body.light-mode .footer a:hover {
 }
 
 body.light-mode .box-title {
-   background: linear-gradient(180deg, #1a1a1a, #6b5959);
-   -webkit-background-clip: text;
+  background: linear-gradient(180deg, #1a1a1a, #6b5959);
+  -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 600px) {
+.navbar {
+    top: 0;
+    padding: 0;
+    border-radius: 1px;
+    left: 0;
+    transform: translateX(0);
+  }
+
+  .nav-links {
+    gap: 1rem;
+    border-radius: 0px;
+  }
+
+  .perfil {
+    margin-top: 40px;
+    scroll-margin-top: 30px;
+  }
+
+  .botones {
+    flex-wrap: wrap;
+  }
+
+  #iconCanvas {
+    display: none;
+  }
+
+  .proyectos {
+    margin-top: 80px;
+  }
+
+  .proyecto {
+    margin: 0;
+    padding: 0 20px;
+  }
+
+  .footer-right {
+    display: none;
+  }
+
+  .marco-imagen {
+    background: radial-gradient(circle at top left,
+        rgba(90, 73, 174, 0.3) 0%,
+        rgb(56, 56, 56) 60%),
+      radial-gradient(circle at bottom right,
+        rgba(73, 128, 206, 0.3) 0%,
+        rgb(60, 60, 60) 60%);
+    width: 420px;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #1e1e2f;
+  }
+
+  .imagen-ajustada {
+    width: 420px;
+    height: 200px;
+    border-radius: 12px;
+    transform: translate(0, 0px);
+  }
+
+  .tecnologias {
+    margin: 0;
+    margin-top: 70px;
+    padding: 1rem;
+    scroll-margin-top: 70px;
+  }
+
+  .titulo-tecnologias {
+    margin: 0;
+    margin-bottom: 35px;
+  }
+
+  .fa-4x {
+    font-size: 3em !important;
+  }
+
+  .eximg {
+    height: 50px;
+    width: auto;
+  }
+
+  .vsc {
+    height: 40px;
+  }
+
+  .ex {
+    height: 53px;
+  }
+
+  .contenedor {
+    display: block;
+    gap: 1rem;
+  }
+
+  .caja {
+    padding: 2px 0;
+    margin: 20px 0;
+  }
+
+  .footer {
+    padding: 0;
+    margin-top: -20px;
+  }
+
+  .footer-left {
+    margin-left: 0px;
+  }
+
+  .experiencia-laboral {
+    padding: 0 20px;
+    margin-top: 40px;
+    scroll-margin-top: 90px;
+  }
+
+  body.light-mode .navbar {
+    background: #d3d3d3;
+  }
+
+  body.dark-mode .navbar {
+    background: #1b2233;
+  }
+
+  .iconos {
+    gap: 4rem;
+  }
+
+  .li-jira {
+    padding-left: 15px;
+  }
+
+  .nginx {
+    margin-bottom: 10px;
+  }
+
+  .bash {
+    margin-bottom: 10px;
+  }
+
+  .lang {
+    margin-left: 15px;
+  }
 }
