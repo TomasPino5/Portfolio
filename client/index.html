@@ -11,211 +11,225 @@
 </head>
 
 <body>
-  <nav class="navbar">
-    <ul id="itemsContainer" class="nav-links">
-      <li><a class="item" href="#about-me">Sobre mí</a></li>
-      <li><a class="item" href="#experiencie">Experiencia</a></li>
-      <li><a class="item" href="#projects">Proyectos</a></li>
-      <li><a class="item" href="#technologies">Tecnologias</a></li>
-      <li><a id="navIcon" class="item"></a>
-      </li>
-    </ul>
-  </nav>
-
-
-  <div class="perfil" id="about-me">
-    <div class="estado-laboral">
-      <img src="./images/myPhoto.jpg" alt="Foto de perfil" class="avatar" />
-      <a class="disponible" href="https://www.linkedin.com/in/tomas-pino-001161285/" target="_blank">Disponible
-        para trabajar</a>
-    </div>
-    <h1>Hola! soy <strong>Tomas Pino</strong></h1>
-    <p class="descripcion">
-      Apasionado por la tecnología, en formación como desarrollador de software.<br />
-      <span class="resaltado">Programador con aprendizaje autodidacta</span> y experiencia previa en soporte
-      IT,<br />
-      desde Buenos Aires, Argentina. <br />
-      Me interesa el desarrollo de aplicaciones web y crear proyectos reales mientras continúo fortaleciendo mis
-      habilidades técnicas.
-    </p>
-
-    <div class="botones">
-      <a href="https://github.com/TomasPino5" target="_blank" class="btn contacto">
-        <i class="fa-brands fa-github"></i> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/tomas-pino-001161285/" target="_blank" class="btn linkedin">
-        <i class="fa-brands fa-linkedin"></i> LinkedIn
-      </a>
-      <a href="mailto:tomaspino48@gmail.com" target="_blank" class="btn contacto">
-        <i class="fa-solid fa-envelope"></i> Contáctame
-      </a>
-    </div>
+  <div id="preloader">
+    <div class="spinner"></div>
   </div>
 
-  <div class="experiencia-laboral" id="experiencie">
-    <h2 class="title"><i class="fa-solid fa-suitcase"></i> Experiencia</h2>
-    <div class="linea-tiempo">
-      <div class="item0">
-        <div class="punto"></div>
-        <div class="contenido">
-          <h3><span class="titulo">Proximamente...</span></h3>
+  <div id="contenido" style="display: none;">
+    <nav class="navbar">
+      <ul id="itemsContainer" class="nav-links">
+        <li><a class="item" id="about" href="#about-me">Sobre mí</a></li>
+        <li><a class="item" id="exp" href="#experiencie">Experiencia</a></li>
+        <li><a class="item" id="proj" href="#projects">Proyectos</a></li>
+        <li><a class="item" id="tech" href="#technologies">Tecnologias</a></li>
+        <li><a id="navIcon" class="item"></a>
+        </li>
+      </ul>
+    </nav>
+
+
+    <div class="perfil" id="about-me">
+      <div class="estado-laboral">
+        <img src="./images/myPhoto.jpg" alt="Foto de perfil" class="avatar" />
+        <a class="disponible" href="https://www.linkedin.com/in/tomas-pino-001161285/" target="_blank">Disponible
+          para trabajar</a>
+      </div>
+      <h1>Hola! soy <strong>Tomas Pino</strong></h1>
+      <p class="descripcion">
+        Apasionado por la tecnología, en formación como desarrollador de software.<br />
+        <span class="resaltado">Programador con aprendizaje autodidacta</span> y experiencia previa en soporte
+        IT,<br />
+        desde Buenos Aires, Argentina. <br />
+        Me interesa el desarrollo de aplicaciones web y crear proyectos reales mientras continúo fortaleciendo mis
+        habilidades técnicas.
+      </p>
+
+      <div class="botones">
+        <a href="https://github.com/TomasPino5" target="_blank" class="btn contacto">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/tomas-pino-001161285/" target="_blank" class="btn linkedin">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:tomaspino48@gmail.com" target="_blank" class="btn contacto">
+          <i class="fa-solid fa-envelope"></i> Contáctame
+        </a>
+      </div>
+    </div>
+
+    <div class="experiencia-laboral" id="experiencie">
+      <h2 class="title"><i class="fa-solid fa-suitcase"></i> Experiencia</h2>
+      <div class="linea-tiempo">
+        <div class="item0">
+          <div class="punto"></div>
+          <div class="contenido">
+            <h3><span class="titulo">Proximamente...</span></h3>
+          </div>
+        </div>
+        <div class="item0">
+          <div class="punto"></div>
+          <div class="contenido">
+            <h3><span class="titulo">Trainee Developer</span></h3>
+            <p class="empresa">Proyectos Personales<br><span class="fecha">Actualmente</span></p>
+            <p class="experience-description">
+              En formación como desarrollador de software, enfocándome en el desarrollo web. Realizo proyectos
+              reales donde aplico diversas tecnologías, mientras amplío mis conocimientos y habilidades técnicas.
+            </p>
+          </div>
+        </div>
+        <div class="item0">
+          <div class="punto"></div>
+          <div class="contenido">
+            <h3><span class="titulo">IT Technical Support</span></h3>
+            <p class="empresa">Grupo L<br><span class="fecha">Mayo 2024 - Actualmente</span></p>
+            <p class="experience-description">
+              Soporte técnico a usuarios en entorno Windows, gestionando incidencias,
+              mantenimiento preventivo y armado de equipos. Trabajo en equipo resolviendo problemas de
+              hardware, redes y software, desarrollando habilidades clave de comunicación y análisis.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="item0">
-        <div class="punto"></div>
-        <div class="contenido">
-          <h3><span class="titulo">Trainee Developer</span></h3>
-          <p class="empresa">Proyectos Personales<br><span class="fecha">Actualmente</span></p>
-          <p class="experience-description">
-            En formación como desarrollador de software, enfocándome en el desarrollo web. Realizo proyectos
-            reales donde aplico diversas tecnologías, mientras amplío mis conocimientos y habilidades técnicas.
+    </div>
+
+    <section class="proyectos" id="projects">
+      <h2 class="title-projects"><i class="fa-solid fa-code"></i> Proyectos</h2>
+
+      <div class="proyecto">
+        <div class="marco-imagen">
+          <img src="./images/captura.png" alt="Proyecto CodeFree" class="imagen-ajustada" />
+        </div>
+        <div class="content">
+          <h3>CodeFree - Cursos gratuitos y accesibles para aprender programación.</h3>
+          <div class="etiquetas">
+            <span class="tag html"><i class="fa-brands fa-html5"></i> HTML</span>
+            <span class="tag css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+            <span class="tag js"><i class="fa-brands fa-js"></i> JavaScript</span>
+            <span class="tag node"><i class="fa-brands fa-node-js"></i> Node.js</span>
+            <span class="tag bootstrap"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+          </div>
+          <p>
+            Página web que ofrece cursos de programación organizados por niveles y temas. Incluye contenido actualizado
+            sobre lenguajes como JavaScript, Python y HTML/CSS y mucho mas!
           </p>
+          <div class="buttons">
+            <a class="btns" href="https://github.com/TomasPino5/CodeFree" target="_blank"><i
+                class="fa-brands fa-github"></i> Codigo</a>
+            <a class="btns" href="https://codefree.site/inicio" target="_blank"><i class="fa-solid fa-link"></i>
+              Sitio</a>
+          </div>
         </div>
       </div>
-      <div class="item0">
-        <div class="punto"></div>
-        <div class="contenido">
-          <h3><span class="titulo">IT Technical Support</span></h3>
-          <p class="empresa">Grupo L<br><span class="fecha">Mayo 2024 - Actualmente</span></p>
-          <p class="experience-description">
-            Soporte técnico a usuarios en entorno Windows, gestionando incidencias,
-            mantenimiento preventivo y armado de equipos. Trabajo en equipo resolviendo problemas de
-            hardware, redes y software, desarrollando habilidades clave de comunicación y análisis.
-          </p>
+    </section>
+
+    <div class="tecnologias" id="technologies">
+      <h2 class="titulo-tecnologias"><i class="fa-solid fa-laptop-code"></i> Tecnologías</h2>
+      <p class="description">
+        Estas son las tecnologías con las que trabajo y en las que tengo <span class="resaltado">experiencia</span>.
+        Desde
+        <span class="resaltado">lenguajes de programación</span> hasta <span class="resaltado">herramientas</span> y
+        <span class="resaltado">frameworks</span> que utilizo para desarrollar soluciones modernas y eficientes.
+      </p>
+
+      <div class="contenedor">
+        <div class="caja lenguajes">
+          <h3 class="box-title">Lenguajes</h3>
+          <ul class="iconos lang extend">
+            <li>
+              <i class="fa-brands fa-html5 fa-4x"></i>
+              <span>HTML</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-css3-alt fa-4x"></i>
+              <span>CSS</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-js fa-4x"></i>
+              <span>JavaScript</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="caja frameworks">
+          <h3 class="box-title">Frameworks</h3>
+          <ul class="iconos extend">
+            <li>
+              <i class="fa-brands fa-node-js fa-4x"></i>
+              <span>Node.js</span>
+            </li>
+            <li>
+              <img src="./images/express.webp" class="eximg ex">
+              <span>Express</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-bootstrap fa-4x"></i>
+              <span>Bootstrap</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="caja herramientas">
+          <h3 class="box-title">Herramientas</h3>
+          <ul class="iconos">
+            <li>
+              <img src="./images/aws.webp" class="eximg">
+              <span>AWS</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-npm fa-4x"></i>
+              <span>npm</span>
+            </li>
+            <li>
+              <img src="./images/vsc.png" class="eximg vsc">
+              <span>VSC</span>
+            </li>
+            <li class="li-jira">
+              <i class="fa-brands fa-jira fa-4x"></i>
+              <span>Jira</span>
+            </li>
+            <li>
+              <img src="./images/nginx.png" class="eximg nginx">
+              <span>Nginx</span>
+            </li>
+            <li>
+              <img src="./images/bash.png" class="eximg bash">
+              <span>Bash/Shell</span>
+            </li>
+            <li>
+              <img src="./images/git.png" class="eximg">
+              <span>Git</span>
+            </li>
+            <li>
+              <i class="fa-brands fa-github fa-4x"></i>
+              <span>GitHub</span>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <div class="footer-left">
+        <p>© 2025 Tomas Pino. Casi todos los derechos reservados</p>
+      </div>
+      <div class="footer-right">
+        <a id="bonus">Bonus Track</a>
+      </div>
+    </footer>
+
+    <canvas id="iconCanvas"></canvas>
+
   </div>
-
-  <section class="proyectos" id="projects">
-    <h2 class="title-projects"><i class="fa-solid fa-code"></i> Proyectos</h2>
-
-    <div class="proyecto">
-      <div class="marco-imagen">
-        <img src="./images/captura.png" alt="Proyecto CodeFree" class="imagen-ajustada" />
-      </div>
-      <div class="content">
-        <h3>CodeFree - Cursos gratuitos y accesibles para aprender programación.</h3>
-        <div class="etiquetas">
-          <span class="tag html"><i class="fa-brands fa-html5"></i> HTML</span>
-          <span class="tag css"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-          <span class="tag js"><i class="fa-brands fa-js"></i> JavaScript</span>
-          <span class="tag node"><i class="fa-brands fa-node-js"></i> Node.js</span>
-          <span class="tag bootstrap"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
-        </div>
-        <p>
-          Página web que ofrece cursos de programación organizados por niveles y temas. Incluye contenido actualizado
-          sobre lenguajes como JavaScript, Python y HTML/CSS y mucho mas!
-        </p>
-        <div class="buttons">
-          <a class="btns" href="https://github.com/TomasPino5/CodeFree" target="_blank"><i
-              class="fa-brands fa-github"></i> Codigo</a>
-          <a class="btns" href="https://codefree.site/inicio" target="_blank"><i class="fa-solid fa-link"></i> Sitio</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="tecnologias" id="technologies">
-    <h2 class="titulo-tecnologias"><i class="fa-solid fa-laptop-code"></i> Tecnologías</h2>
-    <p class="description">
-      Estas son las tecnologías con las que trabajo y en las que tengo <span class="resaltado">experiencia</span>. Desde <span class="resaltado">lenguajes de programación</span> hasta <span class="resaltado">herramientas</span> y <span class="resaltado">frameworks</span> que utilizo para desarrollar soluciones modernas y eficientes.
-    </p>
-
-    <div class="contenedor">
-      <div class="caja lenguajes">
-        <h3 class="box-title">Lenguajes</h3>
-        <ul class="iconos lang extend">
-          <li>
-            <i class="fa-brands fa-html5 fa-4x"></i>
-            <span>HTML</span>
-          </li>
-          <li>
-            <i class="fa-brands fa-css3-alt fa-4x"></i>
-            <span>CSS</span>
-          </li>
-          <li>
-            <i class="fa-brands fa-js fa-4x"></i>
-            <span>JavaScript</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="caja frameworks">
-        <h3 class="box-title">Frameworks</h3>
-        <ul class="iconos extend">
-          <li>
-            <i class="fa-brands fa-node-js fa-4x"></i>
-            <span>Node.js</span>
-          </li>
-          <li>
-            <img src="./images/express.webp" class="eximg ex">
-            <span>Express</span>
-          </li>
-          <li>
-            <i class="fa-brands fa-bootstrap fa-4x"></i>
-            <span>Bootstrap</span>
-          </li>
-        </ul>
-      </div>
-
-      <div class="caja herramientas">
-        <h3 class="box-title">Herramientas</h3>
-        <ul class="iconos">
-          <li>
-            <img src="./images/aws.webp" class="eximg">
-            <span>AWS</span>
-          </li>
-          <li>
-            <i class="fa-brands fa-npm fa-4x"></i>
-            <span>npm</span>
-          </li>
-          <li>
-            <img src="./images/vsc.png" class="eximg vsc">
-            <span>VSC</span>
-          </li>
-          <li class="li-jira">
-            <i class="fa-brands fa-jira fa-4x"></i>
-            <span>Jira</span>
-          </li>
-          <li>
-            <img src="./images/nginx.png" class="eximg nginx">
-            <span>Nginx</span>
-          </li>
-          <li>
-            <img src="./images/bash.png" class="eximg bash">
-            <span>Bash/Shell</span>
-          </li>
-          <li>
-            <img src="./images/git.png" class="eximg">
-            <span>Git</span>
-          </li>
-          <li>
-            <i class="fa-brands fa-github fa-4x"></i>
-            <span>GitHub</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="footer-left">
-      <p>© 2025 Tomas Pino. Casi todos los derechos reservados</p>
-    </div>
-    <div class="footer-right">
-      <a id="bonus">Bonus Track</a>
-    </div>
-  </footer>
-
-  <canvas id="iconCanvas"></canvas>
-
-
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
 <script src="./index.js"></script>
 <script src="https://kit.fontawesome.com/1dc8d6c2bd.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 <script type="module" src="../dispatcher.js"></script>
+<script>
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+</script>
 
 </html>

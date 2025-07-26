@@ -1,3 +1,12 @@
+window.addEventListener("load", () => {
+
+  const preloader = document.getElementById("preloader");
+  const contenido = document.getElementById("contenido");
+
+  preloader.style.display = "none";
+  contenido.style.display = "block";
+});
+
 const { Engine, Render, World, Bodies, Mouse, MouseConstraint } = Matter;
 
 const canvas = document.getElementById('iconCanvas');

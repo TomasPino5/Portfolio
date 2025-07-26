@@ -54,3 +54,47 @@ export function getNavbar() {
     }
   });
 }
+
+let removeStyle = () => {
+  let links = document.querySelectorAll('.selected-item')
+  links.forEach(link => {
+    link.classList.remove('selected-item');
+  })
+}
+
+window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+  if (window.innerWidth > 768) {
+    if (window.scrollY > 50 && window.scrollY < 400) {
+      removeStyle();
+      document.getElementById('about').classList.add('selected-item');
+    } else if (window.scrollY >= 520 && window.scrollY < 930) {
+      removeStyle();
+      document.getElementById('exp').classList.add('selected-item');
+    } else if (window.scrollY >= 1086 && window.scrollY < 1380) {
+      removeStyle();
+      document.getElementById('proj').classList.add('selected-item');
+    } else if (window.scrollY >= 1526 && window.scrollY < 1575) {
+      removeStyle();
+      document.getElementById('tech').classList.add('selected-item');
+    } else {
+      removeStyle();
+    }
+  } else {
+    if (window.scrollY >= 10 && window.scrollY < 585) {
+      removeStyle();
+      document.getElementById('about').classList.add('selected-item');
+    } else if (window.scrollY >= 757 && window.scrollY < 1313) {
+      removeStyle();
+      document.getElementById('exp').classList.add('selected-item');
+    } else if (window.scrollY >= 1468 && window.scrollY < 1992) {
+      removeStyle();
+      document.getElementById('proj').classList.add('selected-item');
+    } else if (window.scrollY >= 2148 && window.scrollY < 2600) {
+      removeStyle();
+      document.getElementById('tech').classList.add('selected-item');
+    } else {
+      removeStyle();
+    }
+  }
+})
